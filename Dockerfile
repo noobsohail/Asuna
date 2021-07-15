@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/ShigeoRobot
-RUN git clone -b shiken https://github.com/AnimeKaizoku/ShigeoRobot /root/ShigeoRobot
-WORKDIR /root/ShigeoRobot
+RUN git clone -b shiken https://github.com/AnimeKaizoku/ShigeoRobot /root/SaitamaRobot
+WORKDIR /root/SaitamaRobot
 
 #Copy config file to /root/ShigeoRobot/ShigeoRobot
-COPY ./ShigeoRobot/sample_config.py ./ShigeoRobot/config.py* /root/ShigeoRobot/ShigeoRobot/
+COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/SaitamaRobot/ShigeoRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","ShigeoRobot"]
+CMD ["python3","-m","SaitamaRobot"]
