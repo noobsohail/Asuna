@@ -649,7 +649,9 @@ WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addSpirits"), addwhitelist)
 UNSUDO_HANDLER = CommandHandler(("removesudo", "removedragon"), removesudo)
 UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport)
 UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removeSpirits"), removewhitelist)
+UNWHITELIST_HANDLER = CommandHandler(
+    ("removewhitelist", "removeSpirits"), removewhitelist
+)
 
 WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist)
 TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist)
