@@ -1,4 +1,4 @@
-from ShigeoRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
+from SaitamaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
 
 IMMUNE_USERS = DRAGONS + WOLVES + DEMONS + TIGERS + DEV_USERS
 

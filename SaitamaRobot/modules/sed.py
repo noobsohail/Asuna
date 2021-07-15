@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from ShigeoRobot import LOGGER, dispatcher
-from ShigeoRobot.modules.disable import DisableAbleMessageHandler
-from ShigeoRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from SaitamaRobot import LOGGER, dispatcher
+from SaitamaRobot.modules.disable import DisableAbleMessageHandler
+from SaitamaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 

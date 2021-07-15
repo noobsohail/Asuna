@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import ShigeoRobot.modules.sql.welcome_sql as sql
-import ShigeoRobot
-from ShigeoRobot import (
+import SaitamaRobot.modules.sql.welcome_sql as sql
+import SaitamaRobot
+from SaitamaRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from ShigeoRobot import (
     dispatcher,
     JOIN_LOGGER
 )
-from ShigeoRobot.modules.helper_funcs.chat_status import (
+from SaitamaRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from ShigeoRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from ShigeoRobot.modules.helper_funcs.msg_types import get_welcome_type
-from ShigeoRobot.modules.helper_funcs.string_handling import (
+from SaitamaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from SaitamaRobot.modules.helper_funcs.msg_types import get_welcome_type
+from SaitamaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from ShigeoRobot.modules.log_channel import loggable
-from ShigeoRobot.modules.sql.global_bans_sql import is_user_gbanned
+from SaitamaRobot.modules.log_channel import loggable
+from SaitamaRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -265,7 +265,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not ShigeoRobot.ALLOW_CHATS:
+                if not SaitamaRobot.ALLOW_CHATS:
                     with suppress(BadRequest):
                          update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
                     bot.leave_chat(update.effective_chat.id)

@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import ShigeoRobot.modules.sql.feds_sql as sql
-from ShigeoRobot import (
+import SaitamaRobot.modules.sql.feds_sql as sql
+from SaitamaRobot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from ShigeoRobot import (
     WOLVES,
     dispatcher,
 )
-from ShigeoRobot.modules.disable import DisableAbleCommandHandler
-from ShigeoRobot.modules.helper_funcs.alternate import send_message
-from ShigeoRobot.modules.helper_funcs.chat_status import is_user_admin
-from ShigeoRobot.modules.helper_funcs.extraction import (
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot.modules.helper_funcs.alternate import send_message
+from SaitamaRobot.modules.helper_funcs.chat_status import is_user_admin
+from SaitamaRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from ShigeoRobot.modules.helper_funcs.string_handling import markdown_parser
+from SaitamaRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

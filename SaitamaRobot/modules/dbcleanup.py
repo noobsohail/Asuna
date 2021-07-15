@@ -1,9 +1,9 @@
 from time import sleep
 
-import ShigeoRobot.modules.sql.global_bans_sql as gban_sql
-import ShigeoRobot.modules.sql.users_sql as user_sql
-from ShigeoRobot import DEV_USERS, OWNER_ID, dispatcher
-from ShigeoRobot.modules.helper_funcs.chat_status import dev_plus
+import SaitamaRobot.modules.sql.global_bans_sql as gban_sql
+import SaitamaRobot.modules.sql.users_sql as user_sql
+from SaitamaRobot import DEV_USERS, OWNER_ID, dispatcher
+from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

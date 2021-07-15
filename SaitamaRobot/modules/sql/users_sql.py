@@ -1,7 +1,7 @@
 import threading
 
-from ShigeoRobot import dispatcher
-from ShigeoRobot.modules.sql import BASE, SESSION
+from SaitamaRobot import dispatcher
+from SaitamaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,

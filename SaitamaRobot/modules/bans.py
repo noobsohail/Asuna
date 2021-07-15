@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from ShigeoRobot import (
+from SaitamaRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from ShigeoRobot import (
     WOLVES,
     dispatcher,
 )
-from ShigeoRobot.modules.disable import DisableAbleCommandHandler
-from ShigeoRobot.modules.helper_funcs.chat_status import (
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from ShigeoRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from ShigeoRobot.modules.helper_funcs.extraction import extract_user_and_text
-from ShigeoRobot.modules.helper_funcs.string_handling import extract_time
-from ShigeoRobot.modules.log_channel import gloggable, loggable
+from SaitamaRobot.modules.helper_funcs.extraction import extract_user_and_text
+from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
+from SaitamaRobot.modules.log_channel import gloggable, loggable
 
 
 @run_async

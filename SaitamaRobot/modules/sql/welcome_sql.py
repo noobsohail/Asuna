@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from ShigeoRobot.modules.helper_funcs.msg_types import Types
-from ShigeoRobot.modules.sql import BASE, SESSION
+from SaitamaRobot.modules.helper_funcs.msg_types import Types
+from SaitamaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"

@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from ShigeoRobot import dispatcher, LOGGER, DRAGONS
-from ShigeoRobot.modules.disable import DisableAbleCommandHandler
-from ShigeoRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from ShigeoRobot.modules.helper_funcs.chat_status import user_admin
-from ShigeoRobot.modules.helper_funcs.extraction import extract_text
-from ShigeoRobot.modules.helper_funcs.filters import CustomFilters
-from ShigeoRobot.modules.helper_funcs.misc import build_keyboard_parser
-from ShigeoRobot.modules.helper_funcs.msg_types import get_filter_type
-from ShigeoRobot.modules.helper_funcs.string_handling import (
+from SaitamaRobot import dispatcher, LOGGER, DRAGONS
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
+from SaitamaRobot.modules.helper_funcs.extraction import extract_text
+from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
+from SaitamaRobot.modules.helper_funcs.misc import build_keyboard_parser
+from SaitamaRobot.modules.helper_funcs.msg_types import get_filter_type
+from SaitamaRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from ShigeoRobot.modules.sql import cust_filters_sql as sql
+from SaitamaRobot.modules.sql import cust_filters_sql as sql
 
-from ShigeoRobot.modules.connection import connected
+from SaitamaRobot.modules.connection import connected
 
-from ShigeoRobot.modules.helper_funcs.alternate import send_message, typing_action
+from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

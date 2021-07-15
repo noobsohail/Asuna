@@ -1,11 +1,11 @@
 import html
-from ShigeoRobot.modules.disable import DisableAbleCommandHandler
-from ShigeoRobot import dispatcher, DRAGONS
-from ShigeoRobot.modules.helper_funcs.extraction import extract_user
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot import dispatcher, DRAGONS
+from SaitamaRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, run_async, CallbackQueryHandler
-import ShigeoRobot.modules.sql.approve_sql as sql
-from ShigeoRobot.modules.helper_funcs.chat_status import user_admin
-from ShigeoRobot.modules.log_channel import loggable
+import SaitamaRobot.modules.sql.approve_sql as sql
+from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
+from SaitamaRobot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest

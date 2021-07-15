@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import ShigeoRobot
+import SaitamaRobot
 
-from ShigeoRobot import dispatcher
-from ShigeoRobot.modules.helper_funcs.chat_status import dev_plus
+from SaitamaRobot import dispatcher
+from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,12 +18,12 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {ShigeoRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {SaitamaRobot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        ShigeoRobot.ALLOW_CHATS = True
+        SaitamaRobot.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        ShigeoRobot.ALLOW_CHATS = False
+        SaitamaRobot.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return

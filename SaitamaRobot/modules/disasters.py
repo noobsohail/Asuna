@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from ShigeoRobot import (
+from SaitamaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,18 +13,18 @@ from ShigeoRobot import (
     WOLVES,
     dispatcher,
 )
-from ShigeoRobot.modules.helper_funcs.chat_status import (
+from SaitamaRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from ShigeoRobot.modules.helper_funcs.extraction import extract_user
-from ShigeoRobot.modules.log_channel import gloggable
+from SaitamaRobot.modules.helper_funcs.extraction import extract_user
+from SaitamaRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "ShigeoRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "SaitamaRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:

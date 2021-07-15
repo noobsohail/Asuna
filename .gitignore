@@ -1,15 +1,15 @@
 # Config files, logs and stuff
-ShigeoRobot/modules/helper_funcs/temp.txt
-ShigeoRobot/elevated_users.json
-ShigeoRobot/config.py
-ShigeoRobot/config.ini
+SaitamaRobot/modules/helper_funcs/temp.txt
+SaitamaRobot/elevated_users.json
+SaitamaRobot/config.py
+SaitamaRobot/config.ini
 log.txt
 kangsticker.png
 updates.txt
 
 # Session files
-ShigeoRobot/*.session
-ShigeoRobot/*.session-journal
+SaitamaRobot/*.session
+SaitamaRobot/*.session-journal
 Shigeo.session-journal
 *.session
 

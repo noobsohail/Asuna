@@ -64,12 +64,21 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
+<<<<<<< Updated upstream
 # Copy Python Requirements to /root/ShigeoRobot
 RUN git clone -b shiken https://github.com/AnimeKaizoku/ShigeoRobot /root/SaitamaRobot
 WORKDIR /root/SaitamaRobot
 
 #Copy config file to /root/ShigeoRobot/ShigeoRobot
 COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/SaitamaRobot/ShigeoRobot/
+=======
+# Copy Python Requirements to /root/SaitamaRobot
+RUN git clone -b shiken https://github.com/AnimeKaizoku/SaitamaRobot /root/SaitamaRobot
+WORKDIR /root/SaitamaRobot
+
+#Copy config file to /root/SaitamaRobot/SaitamaRobot
+COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/SaitamaRobot/SaitamaRobot/
+>>>>>>> Stashed changes
 
 ENV PATH="/home/bot/bin:$PATH"
 

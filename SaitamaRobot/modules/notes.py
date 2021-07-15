@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import ShigeoRobot.modules.sql.notes_sql as sql
-from ShigeoRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from ShigeoRobot.modules.disable import DisableAbleCommandHandler
-from ShigeoRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from ShigeoRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from ShigeoRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from ShigeoRobot.modules.helper_funcs.msg_types import get_note_type
-from ShigeoRobot.modules.helper_funcs.string_handling import (
+import SaitamaRobot.modules.sql.notes_sql as sql
+from SaitamaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from SaitamaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from SaitamaRobot.modules.helper_funcs.msg_types import get_note_type
+from SaitamaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
